@@ -4,6 +4,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.model_selection import cross_validate
 import numpy as np
 
+#Code by: Nizar Talty
+
 def processFit(X, Y, features):
     model = LinearRegression().fit(X[list(features)], Y)
     y_pred = model.predict(X[list(features)])
