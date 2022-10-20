@@ -28,3 +28,9 @@
     - Time series analysis of Ethereum price (Keras Sequential Model)
 6. utils.py 
     -backward and forward step-wise selection used in other files
+
+## References
+
+Li, K. (2019, July 23). You Don’t Need a Diversified Crypto Portfolio to Spread Risk: Here’s Why. Medium. Retrieved October 19, 2022, from https://towardsdatascience.com/bitcoin-dominance-5a95f0f3319e
+
+Shi, Y., Tiwari, A. K., Gozgor, G., & Lu, Z. (2020). Correlations among cryptocurrencies: Evidence from multivariate factor stochastic volatility model. Research in International Business and Finance, 53, 101231.
