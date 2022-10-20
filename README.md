@@ -1,12 +1,12 @@
 # Final Stats102 project - Cryptocurrency
 
-## Team: 
+## 1. Team: 
 
 - Nizar Talty (nizar.talty@duke.edu) 
 - Hung Nguyen (hung.q.nguyen@duke.edu)
 - Sara Kojic (sara.kojic@duke.edu)
 
-## Individual Contribution 
+## 2. Individual Contribution 
 1. Sara Kojic:
     - NFT Prediction (Linear regression)
     - Time Series Analysis
@@ -20,7 +20,7 @@
     - Data collection
     - Relation between the number of tweets and BTC Prices
 
-## Contents:
+## 3. Contents:
 
 1. main.ipynb
     - Linear Regression Model for predicting the Bitcoin price
@@ -44,9 +44,9 @@
     -backward and forward step-wise selection used in other files
 
 
-## Our project:
+## 4. Our project:
 
-### 1. Linear Regression
+### 4.1. Linear Regression
 First, both forward and backward stepwise selection provide appropriate features for the best model to predict the price. High, Low, Open and Marketcap for BTC are amongst the best features, while others such as the number of tweets are not reliable predictors. 
 
 This graph shows the last 50 days of **Prediction versus the actual price for BTC** after the feature selection.<br>
@@ -56,10 +56,10 @@ With the same approach we tested it for ETH.<br>
 Features used: ['High', 'Low', 'Open']
 ![](graph3.png)
 
-### 2. KNN regression & Decision Tree
+### 4.2. KNN regression & Decision Tree
 Both KNN and Decision trees seems to give good results with a score over 0.9
 
-### 3. Correlation between Cryptocurrencies: BTC/LTC and BTC/ETH
+### 4.3. Correlation between Cryptocurrencies: BTC/LTC and BTC/ETH
 In this section, we explored the potential relation or correlation between cryptocurrencies. After studying the correlation matrix, and doing feature selection on a dataset that contains both the parameters of BTC and ETH for example, we found that it did pick the close price of ETH and the Marketcap of BTC. Same thing goes for the LTC/BTC correlation.<br>
 
    Backward: (55258743.705028124, 0.9181782279857733, (LinearRegression(), 55258743.705028124, ['Close_ETH', 'Marketcap']) <br>
@@ -70,7 +70,7 @@ This graph shows the **Predicted Price VS. the actual Price** with 'Close_ETH', 
 This graph also shows the strong relation between the prices through correlation
 ![](graph5.png)
 
-### 4. Predicting ETH price using NFT parameters
+### 4.4. Predicting ETH price using NFT parameters
 It is known that ETH is widely used for NFT transactions, this causes a correlation between their factors. So we tried to predict ETH price using NFT.<br>
 With features selection, we found that *'High', 'Low', 'Open', 'Marketcap', 'Primary_Sales_cumsum', 'AverageUSD_cum'* are the optimal features for that end.<br>
 Through the following graph that the results are quit positive.
@@ -78,37 +78,37 @@ Through the following graph that the results are quit positive.
 However, when trying to predict the ETH closing price using only NFT indicators, we were less succesful. But the prediction somehow follow the trend of the prices (when it goes down and up) as shown in the following plot:
 ![](graph8.png)
 
-### 5. Relation between BTC tweets and prices
+### 4.5. Relation between BTC tweets and prices
 Our objective was to determine if a model with the number of tweets about BTC could predict with confidence the prices. However we found that the precision is very poor, and concluded that there is no specific or evident relation between them the **number** of tweets and the price, as shown below.
 ![](graph9.png)
 
-### 6. Graphs
+### 4.6. Graphs
 We used multiple graphs to track the prices and one one them using plotly allow us to see the prices but also be able to focus on one part using candlesticks.
 ![](graph10.png)
 ![](graph11.png)
 
-##  Design and Implementation
+## 5 Design and Implementation
 
 We use three different datasets from Kaggle featuring cryptocurrcies prices, NFTs and Bitcoin-related tweets data to conduct our analysis.<br>
 However, for simplifying and making the dataset lighter, the Twitter data set was converted to another CSV file that contains only the number of tweets about BTC.
 ![df1.png](df1.png)
 
 <br><br>
-   ### 3.1 Predictions Using Predictors
+    ### 5.1 Predictions Using Predictors
 ![](graph1.png) <br>
     
-   ### 3.2 Time series analysis
+   ### 5.2 Time series analysis
 We also tried implementing Time Series Analysis using Prohet and Arima packages <br>
 
-   ### 3.3 Graphs and Plots
+   ### 5.3 Graphs and Plots
 For this objective we used matplolib and plotly packages
 
-## 5. Conclusions 
+## 6. Conclusions 
 
 Past research has shown a positive correlation between Bitcoin’s price and other cryptocurrencies, including Litecoin, Ethereum, Ripple and Dash (Li, 2019; Shi et al., 2020). Using price values data from 2013-2021, our research, through linear regression and time series analysis,  yields similar results: the close price of Litecoin and Etherum could be reliable predictors for Bitcoin’s prices, indicating a close correlation between these cryptocurrencies. 
 
 
-## References
+## 7. References
 
 
 Li, K. (2019, July 23). You Don’t Need a Diversified Crypto Portfolio to Spread Risk: Here’s Why. Medium. Retrieved October 19, 2022, from https://towardsdatascience.com/bitcoin-dominance-5a95f0f3319e
