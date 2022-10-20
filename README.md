@@ -91,7 +91,7 @@ We used multiple graphs to track the prices and one one them using plotly allow 
 
 We use three different datasets from Kaggle featuring cryptocurrcies prices, NFTs and Bitcoin-related tweets data to conduct our analysis.<br>
 However, for simplifying and making the dataset lighter, the Twitter data set was converted to another CSV file that contains only the number of tweets about BTC.
-![df1.png](attachment:df1.png)
+![df1.png](df1.png)
 
 <br><br>
    ### 3.1 Predictions Using Predictors
