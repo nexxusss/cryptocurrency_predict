@@ -3,8 +3,8 @@
 ## Team: 
 
 - Nizar Talty (nizar.talty@duke.edu)
-- Sara Kojic (sara.kojic@duke.edu)
 - Hung Nguyen (hung.q.nguyen@duke.edu)
+- Sara Kojic (sara.kojic@duke.edu)
 
 ## Contents:
 
