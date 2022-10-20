@@ -22,7 +22,6 @@
     - predicting Ethereum price using Solana price (Linear Regression)
 4. nft.ipynb
     - Prediction of Ethereum price using NFT data (Linear Regression)
-5. eth.ipynb
     - Time series analysis of Ethereum price (ARIMA,Prophet)
 6. eth_sequential
     - Time series analysis of Ethereum price (Keras Sequential Model)
